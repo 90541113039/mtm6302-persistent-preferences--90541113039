@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Preferences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preferences-panel">
+        <h2>Preferences</h2>
+        <div>
+            <label for="theme-select">Theme:</label>
+            <select id="theme-select">
+                <option value="theme-light">Light</option>
+                <option value="theme-dark">Dark</option>
+                <option value="theme-blue">Blue</option>
+                <option value="theme-custom">Custom</option>
+            </select>
+            <div id="custom-theme" style="display: none;">
+                <label for="theme-color">Choose theme color:</label>
+                <input type="color" id="theme-color" />
+            </div>
+        </div>
+        <div>
+            <label for="list-style-select">List Style:</label>
+            <select id="list-style-select">
+                <option value="list-style-1">Style 1</option>
+                <option value="list-style-2">Style 2</option>
+                <option value="list-style-3">Style 3</option>
+            </select>
+        </div>
+        <div>
+            <label for="font-size-select">Font Size:</label>
+            <select id="font-size-select">
+                <option value="font-size-small">Small</option>
+                <option value="font-size-medium">Medium</option>
+                <option value="font-size-large">Large</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" id="new-item" placeholder="New list item" />
+            <button id="add-item">Add Item</button>
+        </div>
+    </div>
+    <div id="list-section">
+        <h2>My List</h2>
+        <input type="text" id="search" placeholder="Search items..." />
+        <ul id="dynamic-list">
+           
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
