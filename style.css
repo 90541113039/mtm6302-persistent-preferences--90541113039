@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Theme Styles */
+.theme-light {
+    background-color: #7e7d7d;
+    color: #000000;
+}
+
+.theme-dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.theme-blue {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+.theme-custom {
+    background-color: var(--custom-bg-color, #ffffff);
+    color: var(--custom-text-color, #000000);
+}
+
+/* List Styles */
+.list-style-1 ul {
+    list-style-type: disc;
+}
+
+.list-style-2 ul {
+    list-style-type: square;
+}
+
+.list-style-3 ul {
+    list-style-type: circle;
+}
+
+/* Font Sizes */
+.font-size-small li {
+    font-size: 12px;
+}
+
+.font-size-medium li {
+    font-size: 16px;
+}
+
+.font-size-large li {
+    font-size: 20px;
+}
+
+/* Preferences Panel */
+#preferences-panel {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 500px;
+}
+
+#preferences-panel label {
+    margin-right: 10px;
+}
+
+#preferences-panel input[type="text"],
+#preferences-panel input[type="color"],
+#preferences-panel select {
+    margin-bottom: 10px;
+}
+
+#list-section {
+    width: 80%;
+}
+
+#dynamic-list {
+    padding: 0;
+}
+
+#search {
+    margin-bottom: 10px;
+}
+
+.remove-item {
+    margin-left: 10px;
+    background-color: #246d80;
+    border: black;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
